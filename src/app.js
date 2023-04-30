@@ -17,7 +17,7 @@ mongoose.connect(mongoUri, {
 mongoose.connection.on("connected", () => {
   console.log("Connection to Mongo Database established")
 })
-const myRoutes = require("./routes/myRoute")
+const myRoutes = require("./routes/myRoutes")
 app.use("/api/", myRoutes)
 
 const port = 3001
